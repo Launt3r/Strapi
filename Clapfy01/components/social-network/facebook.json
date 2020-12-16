@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_social_network_facebooks",
+  "info": {
+    "name": "facebook",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}

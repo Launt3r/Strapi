@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_social_network_linkedins",
+  "info": {
+    "name": "linkedin",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}

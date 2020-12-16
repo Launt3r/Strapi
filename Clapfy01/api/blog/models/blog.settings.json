@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "name": "Blog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "dateCreation": {
+      "type": "datetime"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "blogs"
+    },
+    "author": {
+      "via": "blogs",
+      "model": "member"
+    },
+    "multimedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.multimedia"
+    },
+    "paragraph": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.paragraph"
+    }
+  }
+}

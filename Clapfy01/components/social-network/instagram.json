@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_social_network_instagrams",
+  "info": {
+    "name": "instagram",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}

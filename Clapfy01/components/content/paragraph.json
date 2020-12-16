@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_content_paragraphs",
+  "info": {
+    "name": " paragraph",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "paragraph1": {
+      "type": "text"
+    },
+    "paragraph2": {
+      "type": "text"
+    },
+    "paragraph3": {
+      "type": "text"
+    },
+    "paragraph4": {
+      "type": "text"
+    },
+    "paragraph5": {
+      "type": "text"
+    }
+  }
+}

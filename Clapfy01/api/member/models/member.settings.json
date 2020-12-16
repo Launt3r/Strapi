@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "name": "Member",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "fullName": {
+      "type": "string"
+    },
+    "photo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "job": {
+      "type": "string"
+    },
+    "blogs": {
+      "collection": "blog",
+      "via": "author"
+    },
+    "linkedin": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social-network.linkedin"
+    },
+    "facebook": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social-network.facebook"
+    },
+    "instagram": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social-network.instagram"
+    }
+  }
+}

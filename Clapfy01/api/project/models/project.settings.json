@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Project"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "multimedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.multimedia"
+    },
+    "paragraph": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.paragraph"
+    },
+    "offer": {
+      "via": "projects",
+      "model": "offers"
+    }
+  }
+}
